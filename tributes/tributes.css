@@ -309,4 +309,13 @@ font-family: 'Telegraf', sans-serif;
       left: 0; /* Align to the left edge */
     }
   }
+
+  .champion-name {
+    font-size: 1.5em; 
+    font-family: 'Arial', sans-serif;
+    color: #992C23;
+    text-align: center;
+    margin-top: 0.5em;
+    font-weight: bold;
+  }
   
