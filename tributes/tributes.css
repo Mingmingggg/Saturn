@@ -149,7 +149,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .placement h2 {
-        font-size: 18px; /* Reduce text size on smaller screens */
+        font-size: 15px; 
     }
 }
 
