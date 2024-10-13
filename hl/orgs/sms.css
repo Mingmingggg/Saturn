@@ -6,6 +6,31 @@
 }
 
 
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafUltraBold800.otf') format('opentype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafUltraLight200.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('font/TelegrafRegular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -309,7 +334,7 @@ p {
 /***********BIRD************/
 .bird-img {
     position: absolute; 
-    top: 1790px; 
+    top: 1850px; 
     left: 1155px; 
     width: 500px;
     height: auto; 
@@ -427,7 +452,7 @@ p {
 
 
 .logo {
-    width: 7vw;    
+    width: 8vw;    
     height: 7vw;  
     position: relative;
     left: 2vw;    
@@ -459,12 +484,12 @@ p {
     .main-text {
         font-size: 6vw;
         bottom: 1vw;
-        left: 2vw;
+        left: 4vw;
     }
 
     .tagline {
-        font-size: 2.5vw;
-        left: 3vw;
+        font-size: 2.0vw;
+        left: 4vw;
     }
 }
 
@@ -477,14 +502,14 @@ p {
     }
 
     .main-text {
-        font-size: 7vw;
+        font-size: 6vw;
         bottom: 2vw;
-        left: 3vw;
+        left: 1vw;
     }
 
     .tagline {
-        font-size: 3vw;
-        left: 5vw;
+        font-size: 2vw;
+        left: 1vw;
     }
 }
 
@@ -531,11 +556,12 @@ p {
 
 
 
+
 /*******************************MISSION-VISION*********************************/
 .mission-vision-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between; /* Use space-between for better distribution */
     align-items: flex-start;
     margin: 0;
     margin-bottom: -10px; 
@@ -559,15 +585,17 @@ p {
     padding-left: 20px;
     padding-right: 20px;
     color: rgb(255, 255, 255);
-    font-size: 4vw; 
+    font-size: 3vw; 
     line-height: 1.5;
     text-align: justify;
+    font-family: 'Telegraf', sans-serif;
+    margin-bottom: 170px;
 }
 
 @media only screen and (min-width: 768px) {
     .mission-vision-container {
         flex-direction: row; 
-        margin-bottom: 350px; 
+        margin-bottom: 50px; /* Adjust margin for better spacing */
     }
 
     .MissionVission {
@@ -576,107 +604,119 @@ p {
     }
 
     .MissionVission h2 {
-        font-size: 76px; 
+        font-size: 3em; /* Use em for better scaling */
     }
 
     .MissionVission p {
-        font-size: 16px; 
+        font-size: 1.5em; /* Use em for better scaling */
         padding-left: 40px;
         padding-right: 40px;
     }
 }
 
+.button-container {
+    display: flex;               /* Use flexbox for layout */
+    justify-content: center;     /* Center the buttons horizontally */
+    align-items: center;         /* Center the buttons vertically */
+    gap: 10px;                   /* Space between buttons */
+    margin: 20px;                /* Margin around the container */
+    margin-bottom: 90px;
+}
+
+
+
 
 /*******************************ORG-IMG*********************************/
 .side-image {
-    width: 550px; 
-    height: 475px; 
-    margin-left: 60px;
-    margin-right: 20px; 
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 15px; 
-    object-fit: cover; 
+    object-fit: cover;
 }
 
 .background-layer {
-    position: relative; 
-    overflow: hidden; 
+    position: relative;
+    overflow: hidden;
 }
 
 .content-container {
-    display: flex; 
-    align-items: flex-start; 
-    max-width: 100%; 
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
 }
 
 .text-content {
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    flex: 1; 
-    max-width: 600px; 
-    box-sizing: border-box; 
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-width: 80%;
+    box-sizing: border-box;
 }
 
 .text-content h2 {
-    font-size: 70px;   
-    color: #ffb660;    
-    margin-bottom: 20px;  
-    text-align: center; 
-    font-family: 'CustomFont', sans-serif;  
-}
-
-.text-content {
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    flex: 1; 
-    max-width: 3000px; 
-    box-sizing: border-box; 
+    font-size: 5vw;
+    color: #ffb660;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'CustomFont', sans-serif;
 }
 
 .text-content p {
-    font-size: 19px;  
-    color: #ffffff;  
-    line-height: 1.6;  
-    text-align: justify; 
-    margin-top: 15px;  
-    padding-left: 5px; 
-    padding-right: 5px; 
+    font-size: 1.2rem;
+    color: #ffffff;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: 'Telegraf', sans-serif;
 }
-
 
 @media (max-width: 768px) {
     .content-container {
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .side-image {
-        margin: 0 0 20px 0; 
-        width: 90%; 
-        height: auto; 
+        margin: 0 0 20px 0;
+        width: 80%; 
+        height: auto;
     }
 
     .text-content {
-        align-items: center; 
-        margin-left: 0; 
-        margin-right: 0; 
-        padding: 0 1px; 
-        max-width: none; 
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 1px;
+        max-width: 100%;
     }
 
     .text-content h2 {
-        font-size: 34px; 
+        font-size: 8vw;
     }
 
     .text-content p {
-        font-size: 12px; 
+        font-size: 12px;
     }
 }
 
+@media only screen and (max-width: 2068px) {
+    .bird-img, .bird-img2, .bird-img3, .arrow-img {
+        display: none; 
+    }
+}
 
-
+@media only screen and (min-width: 1900px) {
+    .bird-img, .bird-img2, .bird-img3, .arrow-img {
+        display: none; 
+    }
+}
 
 
 /*******************************BELOW BUTTON*********************************/
